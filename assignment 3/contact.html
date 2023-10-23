@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page - Nikola Tesla</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css" type="text/css">
+    <link rel="shortcut icon" href="images/favicon.ico">
+</head>
+
+<body>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container">
+          <a class="navbar-brand" href="index.html">Tesla's World</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav ml-auto">
+                  <li class="nav-item active">
+                      <a class="nav-link" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="biography.html">Biography</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="inventions.html">Inventions</a>
+                  </li>
+                  <li class="nav-item">
+                      <a class="nav-link" href="contact.html">Contact</a>
+                  </li>
+              </ul>
+          </div>
+      </div>
+    </nav>
+    <hr>
+    <div class="container mt-4">
+      <h2>Contact Us</h2>
+      <form onsubmit="return validateForm()">
+          <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" placeholder="Your name">
+          </div>
+          <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" placeholder="Your email">
+          </div>
+          <div class="mb-3">
+              <label for="message" class="form-label">Message</label>
+              <textarea class="form-control" id="message" rows="4" placeholder="Your message"></textarea>
+          </div>
+          <div class="success-message" id="successMessage"></div>
+          <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+      <hr>
+      
+      <script src="script/index.js"></script>
+  </body>
